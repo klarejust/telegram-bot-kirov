@@ -27,7 +27,6 @@ async def start(update: Update, context):
 • 📅 Историю основания города
 • 🏛️ Главные достопримечательности  
 • 🎯 Интересные места для посещения
-• 🌤️ Актуальную погоду
 • 🍽️ Где вкусно поесть
 • 🏨 Варианты размещения
 
@@ -38,7 +37,7 @@ async def start(update: Update, context):
 
 def get_back_button():
     keyboard = [
-        [InlineKeyboardButton("🔙 Назад", callback_data='back_to_main')]
+        [InlineKeyboardButton("Назад", callback_data='back_to_main')]
     ]
     return InlineKeyboardMarkup(keyboard)
 
@@ -258,7 +257,6 @@ async def button_handler(update: Update, context):
 • 📅 Историю основания города
 • 🏛️ Главные достопримечательности  
 • 🎯 Интересные места для посещения
-• 🌤️ Актуальную погоду
 • 🍽️ Где вкусно поесть
 • 🏨 Варианты размещения
 
